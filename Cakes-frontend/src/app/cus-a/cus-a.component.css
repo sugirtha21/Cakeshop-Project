@@ -1,0 +1,52 @@
+h1{
+  align-content: center;
+  
+  font-size: large;
+  font-family: 'Times New Roman', Times, serif;
+}
+h2{
+  font-size: x-large;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}.main {
+  display: flex;
+}
+
+.sidebar {
+  width: 500px;
+  height: 500px;
+  background-color: #d1d6c8;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 10px 18px;
+}
+
+.sidebar li a {
+  text-decoration: none;
+  color: #0d0b0b;
+}
+
+.sidebar li a:hover {
+  background-color: #b5d18c;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+.shop-info {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.background-image {
+  background-size: cover;
+  background-position: center;
+  height: 400px; /* Adjust the height as needed */
+}

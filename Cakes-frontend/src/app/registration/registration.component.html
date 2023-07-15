@@ -1,0 +1,71 @@
+
+<div class="container">
+    <div class="row justify-content-center align-items-center inner-row">
+        <div class="col-md-5">
+            <div class="form-box registeration-form p-5">
+                <div class="form-title">
+                    <h2 class="fw-bold mb-3">Registration page</h2>
+                </div>
+                <form #insert="ngForm" (ngSubmit)="insertdetail(insert);btnclick()">
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                        <input type="text" #userName="ngModel" required minlength="5" class="form-control form-control-sm" name="userName" id="floatingInput" ngModel>
+                        <div *ngIf="userName.touched && userName.invalid" class="text-danger">Name is not valid</div>
+                        <label for="floatingInput">Name</label>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="email" #email="ngModel" required pattern="[a-z0-9._%+-@[a-z0-9.-]+[a-z]{2,4}$" class="form-control form-control-sm" name="email" id="floatingInput" ngModel>
+                        <div *ngIf="email.invalid && email.touched"><small class="text-danger">please enter email</small></div>
+                        <label for="floatingInput">Email</label>
+                    </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                        <input type="password" #password="ngModel" required minlength="4" class="form-control form-control-sm" name="password" id="floatingPassword" ngModel>
+                        <div *ngIf="password.invalid && password.touched"><small class="text-danger">please enter password</small></div>
+                        <label for="floatingPassword">Password</label>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="password" #confirmPassword="ngModel" required minlength="4" class="form-control form-control-sm" name="confirmPassword" id="floatingConfirmPassword" ngModel>
+                        <div *ngIf="confirmPassword.invalid && confirmPassword.touched"><small class="text-danger">please re-enter password</small></div>
+                        <label for="floatingConfirmPassword">Confirm Password</label>
+                    </div>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <select class="form-select" #gender="ngModel" required name="gender" id="floatingGender" ngModel>
+                         
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <div *ngIf="gender.invalid && gender.touched"><small class="text-danger">please select gender</small></div>
+                        <label for="floatingGender">Gender</label>
+                    </div>
+
+                    <div class="form-floating mb-3">
+                        <textarea #address="ngModel" required minlength="10" class="form-control form-control-sm" name="address" id="floatingAddress" ngModel></textarea>
+                        <div *ngIf="address.invalid && address.touched"><small class="text-danger">please enter address</small></div>
+                        <label for="floatingAddress">Address</label>
+                    </div>
+                    <div class="row mb-3">
+                    <div class="col-md-6">
+                        <input type="tel" #phoneNumber="ngModel"  class="form-control form-control-sm" name="phoneNumber" id="floatingPhoneNumber" ngModel>
+                        <div *ngIf="phoneNumber.invalid && phoneNumber.touched"><small class="text-danger">please enter a valid phone number</small></div>
+                        <label for="floatingPhoneNumber">Phone Number</label>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="number" #registrationCode="ngModel" class="form-control form-control-sm" name="registrationCode" id="floatingRegistrationCode" ngModel>
+                        <div *ngIf="registrationCode.invalid && registrationCode.touched"><small class="text-danger">please enter a valid Code</small></div>
+                        <label for="floatingRegistrationCode">Registration Code</label>
+                      </div>
+                    </div>
+                
+                    <div class="mt-3">
+                        <button  class="btn primaryBg text-white" type="submit"><span>Register</span></button>
+                    </div>
+              
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

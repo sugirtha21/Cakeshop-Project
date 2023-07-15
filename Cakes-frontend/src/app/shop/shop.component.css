@@ -1,0 +1,31 @@
+.cake-grid {
+    display: center;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 30px;
+  }
+  
+  .row {
+    display: center;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .cake-grid a {
+    display: center;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    text-decoration:wavy;
+    color: #322a2a;
+  }
+  .cake-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px; /* Add margin-bottom for spacing between items */
+}
+
+.cake-item img {
+    margin-bottom: 20px; /* Add margin-bottom to create space between images */
+}

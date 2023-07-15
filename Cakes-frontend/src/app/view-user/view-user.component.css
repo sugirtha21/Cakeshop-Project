@@ -1,0 +1,38 @@
+h2{
+    font-style: normal;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: x-large;
+    align-self: center;
+}
+.table-heading {
+    text-align: center;
+}
+.box{
+
+    width: 80%;
+    border: 1px solid rgb(203, 178, 178);
+    border-radius: 25px;
+    margin-left: 150px;
+    padding: 0px 20px 20px 20px;
+    table-layout: unset;
+    outline: 1px;
+    outline-style: dotted;
+    align-self: center;
+}
+
+.main{
+    background-color: rgb(224, 176, 176);
+    width:90%;
+    height: 100vh;  
+}
+.table-border{
+    border: 10px;
+    box-sizing: inherit;
+    color: rgb(8, 7, 7);
+}
+table{
+   border:none;
+   overflow-wrap: break-word;
+  
+    
+}

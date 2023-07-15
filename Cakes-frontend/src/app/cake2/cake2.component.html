@@ -1,0 +1,63 @@
+<form #insert1="ngForm" (ngSubmit)="addDetail(insert1)">
+    <div class="mt-5 box">
+        <div class="form-row">
+            <div class="col-md-14">
+             <h2 class="form-group mt-4" style="color: rgb(25, 4, 102);font:  sans-serif;">Add Items</h2>
+            <div class="form-group mt-4">
+                <label> Id</label>
+            </div>
+            <div class="form-row" >
+                <div class="col">
+                    <input type="text"  class="form-control" name="id" ngModel>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-14">
+            <div class="form-group mt-4">
+                <label>Product Name</label>
+            </div>
+            <div class="form-row">
+                <div class="col">
+                    <input type="text" class="form-control" name="description" ngModel>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-14">
+            <div class="form-group mt-4">
+                <label>Flavour</label>
+            </div>
+        <div class="form-row">
+            <div class="col">
+                <input type="text" class="form-control" name="title" ngModel>
+            </div>
+        </div>
+    </div>
+        <div class="col-md-14">
+            <div class="form-group mt-4">
+                <label>Total Price</label>
+            </div>
+            <div class="form-row" >
+                <div class="col">
+                    <input type="text" class="form-control" name="price" ngModel>
+                </div>
+            </div>
+        </div>
+          
+        <div class="form-row mt-4">
+            <div class="col-6">
+                 <button type="submit" class="btn btn-primary" ><span>Add Items</span></button>
+            </div>
+              <!-- <div class="col-6">
+                <button type="submit" class="btn btn-primary"><span>Reset</span></button>&nbsp;
+            </div>--> 
+            
+        
+        </div>
+        </div>
+    </div>
+
+</form>
+
+
+<br>
+<button a routerLink="/admin-u" routerLinkActive="active" href="#" class="back-btn">GO BACK</button>

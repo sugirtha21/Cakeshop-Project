@@ -1,0 +1,32 @@
+
+
+    <form #insert1="ngForm" (ngSubmit)="deleteDetail(insert1)">
+        <div class="mt-5 box">
+            <div class="form-row">
+                <div class="col-md-14">
+                 <h2 class="form-group mt-4" style="color: rgb(25, 4, 102);font:  sans-serif;">Items</h2>
+                <div class="form-group mt-4">
+                    <label> Id</label>
+                </div>
+                <div class="form-row" >
+                    <div class="col">
+                        <input type="text"  class="form-control" name="id" ngModel>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="form-row mt-4">
+                <div class="col-6">
+                    <button type="submit" class="btn btn-primary"><span>Delete items</span></button>&nbsp;
+                </div>
+                  <!-- <div class="col-6">
+                    <button type="submit" class="btn btn-primary"><span>Reset</span></button>&nbsp;
+                </div>--> 
+                
+            
+            </div>
+            </div>
+        </div>
+  
+    </form>
+

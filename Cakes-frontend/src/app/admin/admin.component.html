@@ -1,0 +1,49 @@
+
+  <br>
+  <br>
+  <form class="top" action="" #loginform="ngForm" (ngSubmit)="adminLogin()">
+     <h2  style="color: rgba(13, 12, 12, 0.877);">Admin Login</h2>
+  
+      <main>
+
+        <div class=" contents">
+            <div class="uname">
+               <label>User Name</label>
+               <input type="name" name="name" id="name" [(ngModel)]="admin.name">
+   
+            </div>
+
+          <div class=" contents">
+           <div class="uname">
+              <label> Email id</label>
+              <input type="email" name="email" id="email" [(ngModel)]="admin.email">
+  
+          </div>
+          <div class="password">
+              <label> Password</label>
+              <input type="password" name="password" id="password" [(ngModel)]="admin.password">
+          </div>
+          <div >
+            <button [disabled]="loginform.form.invalid" type="submit"class="btn"><span>login</span></button>
+            <a class="btn" routerLink="/verify" routerActive="active" href="#!">ForgetPassword?</a>
+      </div>
+      <br>
+
+      <div class="header_social text-right">
+        <div class="text-center mb-3">
+       <h3> <p>Sign up with</p></h3>
+        <ul>
+            <li><a href="#"><i class="ion-social-twitter"></i></a></li>
+            <li><a href="#"><i class="ion-social-googleplus-outline"></i></a></li>
+            <li><a href="#"><i class="ion-social-youtube-outline"></i></a></li>
+            <li><a href="#"><i class="ion-social-facebook"></i></a></li>
+            <li><a href="#"><i class="ion-social-instagram-outline"></i></a></li>
+        </ul>
+    </div>
+    </div>
+    </div>
+      <small class="text-danger">{{msg}}</small>
+      </div>
+    </main>
+      </form>
+      

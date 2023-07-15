@@ -1,0 +1,35 @@
+
+  
+ <main class="table">
+    <div class="table-bordered">
+    <a routerLink="/cake2" href="" class="get-started-btn scrollto">Add</a>&nbsp;
+    <a routerLink="/delete" href="" class="get-started-btn scrollto">Delete</a>
+ </div>
+ <hr>
+     <table class="table">
+        
+        <thead>
+            <tr>
+            <th> Id</th>
+            <th>Product Name</th>
+            <th>Flavour </th>
+            <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of listData">
+                <td style="width:7%;">{{item.id}}</td>
+                <td style="width:30%">{{item.description}}</td>
+                <td style="width:30%">{{item.title}}</td>
+                <td style="width:10%">{{item.price}}</td>
+            </tr>
+        </tbody>
+     </table>
+    </main>
+
+
+
+
+
+    <br>
+    <button a routerLink="/admin-u" routerLinkActive="active" href="#" class="back-btn">GO BACK</button>

@@ -1,0 +1,22 @@
+<div class="col-md-8 mt-4 mb-4 box">
+    <h2 class="table-heading">Customer List</h2>
+
+    <table class="table table-bordered">
+       <thead>
+           <tr>
+               <th>Email</th>
+               <th>UserName</th> 
+               <th>Password</th>
+           </tr>
+       </thead>
+       <tbody>
+           <tr *ngFor="let item of listData;">
+               <td><span>{{item.email}}</span></td>
+               <td><span>{{item.userName}}</span></td>
+               <td><span>{{item.password}}</span></td>
+           </tr>
+       </tbody>
+    </table>
+</div>
+<br>
+<button a routerLink="/admin-u" routerLinkActive="active" href="#" class="back-btn">GO BACK</button>

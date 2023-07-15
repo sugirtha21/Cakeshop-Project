@@ -1,0 +1,28 @@
+
+
+.box{
+    width: 70%;
+    border: 1px solid rgb(154, 138, 138);
+    border-radius: 25px;
+    margin-left: 200px;
+    padding: 0px 50px 50px 50px;
+    
+    background-color:rgb(235, 243, 239);
+ 
+}
+
+.main{
+    background-color: rgb(144, 197, 127);
+    width:90%;
+    
+}
+
+
+.table-border{
+    color: rgb(8, 7, 7);
+}
+table{
+   outline-style: double;
+   table-layout: fixed;
+    border: 20px;
+}
